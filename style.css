@@ -1017,19 +1017,19 @@ header {
   }
 
 /* =========================================
-   PROFILE IMAGE CUSTOM STYLING (REDUCED)
+   PROFILE IMAGE CUSTOM STYLING (SMALLER)
    ========================================= */
 
 /* Hero Profile Image Styling */
 .hero-img-frame {
-    width: 240px; 
-    height: 240px;
+    width: 180px;  /* Significantly reduced */
+    height: 180px; /* Significantly reduced */
     margin: 0 auto;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     overflow: hidden;
     background: linear-gradient(45deg, #02569B, #0175C2);
-    border: 4px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.1); /* Slightly thinner border for small size */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     transition: all 0.5s ease-in-out;
     animation: morphProfile 8s ease-in-out infinite alternate;
 }
@@ -1041,18 +1041,6 @@ header {
     mix-blend-mode: normal;
 }
 
-/* About Section Image Styling */
-.about-photo-render {
-    width: 100%;
-    max-width: 280px; 
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 16px;
-    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
-    border: 1px solid rgba(255,255,255,0.08);
-}
-
 /* Fluid Organic Shape Transition Loop */
 @keyframes morphProfile {
     0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
@@ -1062,12 +1050,8 @@ header {
 /* Mobile Responsiveness for Images */
 @media (max-width: 768px) {
     .hero-img-frame {
-        width: 180px;
-        height: 180px;
-    }
-    
-    .about-photo-render {
-        max-width: 220px;
+        width: 130px; /* Smaller footprint on mobile */
+        height: 130px;
     }
 }
   
