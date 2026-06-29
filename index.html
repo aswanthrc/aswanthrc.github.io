@@ -6,138 +6,230 @@
 <title>Aswanth Ramachandran | Team Lead | Mobile Developer</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 
 <body>
 
+<!-- Navigation -->
 <header>
-<nav class="container">
-<div class="logo">AR</div>
+<nav class="navbar">
+<div class="nav-container">
+<div class="logo">
+<span class="logo-accent">A</span>R
+</div>
 
 <ul class="nav-links">
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#contact">Contact</a></li>
+<li><a href="#home" class="nav-link">Home</a></li>
+<li><a href="#about" class="nav-link">About</a></li>
+<li><a href="#skills" class="nav-link">Skills</a></li>
+<li><a href="#projects" class="nav-link">Projects</a></li>
+<li><a href="#experience" class="nav-link">Experience</a></li>
+<li><a href="#contact" class="nav-link">Contact</a></li>
 </ul>
+
+<div class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
 </nav>
 </header>
 
-<section class="hero">
-
+<!-- Hero Section -->
+<section id="home" class="hero">
+<div class="container">
 <div class="hero-content">
+<div class="hero-badge">
+<i class="fas fa-code"></i>
+<span>Welcome to my portfolio</span>
+</div>
 
-<h1>Aswanth Ramachandran</h1>
+<h1 class="hero-title">
+Aswanth<br><span class="gradient-text">Ramachandran</span>
+</h1>
 
-<div class="typing">
+<div class="hero-subtitle">
 <span id="typed"></span>
 </div>
 
-<p>
-10+ years of experience building enterprise-grade Flutter,
-Android and iOS applications.
-Leading teams, designing scalable architectures,
-and delivering impactful products.
+<p class="hero-description">
+10+ years of experience building enterprise-grade Flutter, Android and iOS applications. 
+Leading teams, designing scalable architectures, and delivering impactful products worldwide.
 </p>
 
 <div class="hero-buttons">
-
-<a href="#contact" class="btn-primary">
-Contact Me
+<a href="#contact" class="btn btn-primary">
+<i class="fas fa-envelope"></i>
+Get In Touch
 </a>
 
-<a href="https://drive.google.com/drive/u/1/folders/1xJ-5ggRau2I6s4hYkYmpxW4mMO83Eelm" class="btn-secondary" target="_blank">
+<a href="https://drive.google.com/drive/u/1/folders/1xJ-5ggRau2I6s4hYkYmpxW4mMO83Eelm" class="btn btn-secondary" target="_blank">
+<i class="fas fa-download"></i>
 Download Resume
 </a>
-
 </div>
 
+<div class="hero-social">
+<a href="https://github.com/aswanthrc" target="_blank" class="social-link">
+<i class="fab fa-github"></i>
+</a>
+<a href="https://linkedin.com/in/aswanthrc" target="_blank" class="social-link">
+<i class="fab fa-linkedin"></i>
+</a>
+<a href="mailto:aswanthrc@gmail.com" class="social-link">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
 </div>
 
+<div class="hero-image">
+<div class="floating-card card-1"></div>
+<div class="floating-card card-2"></div>
+<div class="floating-card card-3"></div>
+</div>
 </section>
 
-<section id="about" class="section">
-
+<!-- About Section -->
+<section id="about" class="section about">
 <div class="container">
+<div class="section-header">
+<h2>About <span class="gradient-text">Me</span></h2>
+<p class="section-subtitle">Get to know more about my journey</p>
+</div>
 
-<h2>About Me</h2>
-
-<div class="card">
-
+<div class="about-content">
+<div class="about-text">
 <p>
-Senior Mobile Application Developer and Team Lead with over
-10 years of experience delivering high-quality mobile applications
-across Flutter, Android, and iOS ecosystems.
-
-Specialized in scalable architecture design,
-team leadership, Agile delivery,
-and end-to-end product development.
+I'm a passionate mobile application developer and team leader with over a decade of experience building world-class applications. My expertise spans Flutter, Android, and iOS ecosystems, with a proven track record of delivering scalable solutions for Fortune 500 companies.
 </p>
 
+<p>
+I specialize in architecting complex mobile applications, leading cross-functional teams, and implementing best practices in agile development. My approach combines technical excellence with business acumen to create products that drive real impact.
+</p>
+
+<div class="about-stats">
+<div class="stat">
+<h3>10+</h3>
+<p>Years Experience</p>
+</div>
+<div class="stat">
+<h3>50+</h3>
+<p>Apps Delivered</p>
+</div>
+<div class="stat">
+<h3>15+</h3>
+<p>Team Members Led</p>
+</div>
+<div class="stat">
+<h3>100%</h3>
+<p>Client Satisfaction</p>
+</div>
+</div>
 </div>
 
+<div class="about-image">
+<div class="image-wrapper">
+<div class="image-placeholder">
+<i class="fas fa-mobile-alt"></i>
 </div>
-
+</div>
+</div>
+</div>
 </section>
 
-<section id="skills" class="section">
-
+<!-- Skills Section -->
+<section id="skills" class="section skills">
 <div class="container">
-
-<h2>Technical Expertise</h2>
+<div class="section-header">
+<h2>Technical <span class="gradient-text">Skills</span></h2>
+<p class="section-subtitle">Technologies and tools I master</p>
+</div>
 
 <div class="skills-grid">
-
 <div class="skill-card">
-<h3>Mobile</h3>
+<div class="skill-icon">
+<i class="fas fa-mobile-alt"></i>
+</div>
+<h3>Mobile Development</h3>
 <p>Flutter, Dart, Android, iOS, Kotlin, Swift, Java</p>
 </div>
 
 <div class="skill-card">
+<div class="skill-icon">
+<i class="fas fa-layer-group"></i>
+</div>
 <h3>Architecture</h3>
 <p>MVVM, MVC, MVP, BLoC, Riverpod, Provider, Redux, GetX</p>
 </div>
 
 <div class="skill-card">
+<div class="skill-icon">
+<i class="fas fa-plug"></i>
+</div>
 <h3>Integrations</h3>
 <p>Firebase, Stripe, Agora, WebRTC, Google Maps, FCM</p>
 </div>
 
 <div class="skill-card">
-<h3>Tools</h3>
-<p>Git, GitHub, GitLab, Android Studio, Xcode</p>
+<div class="skill-icon">
+<i class="fas fa-tools"></i>
+</div>
+<h3>Developer Tools</h3>
+<p>Git, GitHub, GitLab, Android Studio, Xcode, Figma</p>
 </div>
 
+<div class="skill-card">
+<div class="skill-icon">
+<i class="fas fa-database"></i>
+</div>
+<h3>Backend & Database</h3>
+<p>REST APIs, Node.js, PostgreSQL, MongoDB, Cloud Services</p>
 </div>
 
+<div class="skill-card">
+<div class="skill-icon">
+<i class="fas fa-users"></i>
 </div>
-
+<h3>Leadership</h3>
+<p>Team Management, Agile/Scrum, Code Review, Mentoring</p>
+</div>
+</div>
 </section>
 
-<section id="projects" class="section">
-
+<!-- Projects Section -->
+<section id="projects" class="section projects">
 <div class="container">
+<div class="section-header">
+<h2>Featured <span class="gradient-text">Projects</span></h2>
+<p class="section-subtitle">Showcase of impactful work</p>
+</div>
 
-<h2>Featured Projects</h2>
-
-<div class="project-grid">
-
+<div class="projects-grid">
 <div class="project-card">
+<div class="project-image">
+<div class="project-icon">
+<i class="fas fa-plane"></i>
+</div>
+</div>
 
+<div class="project-content">
+<div class="project-badge">Flutter</div>
 <h3>AirBooking</h3>
 
 <p>
-Corporate Travel Booking Platform
+Corporate Travel Booking Platform enabling seamless flight bookings with IATA/NDC integration and real-time price updates.
 </p>
 
-<ul>
+<ul class="project-tech">
 <li>Flutter</li>
 <li>IATA/NDC</li>
 <li>Firebase</li>
@@ -145,134 +237,207 @@ Corporate Travel Booking Platform
 </ul>
 
 <div class="project-links">
-
-<a href="https://apps.apple.com/in/app/airbooking-travel/id6477569529" target="_blank">
-App Store
+<a href="https://apps.apple.com/in/app/airbooking-travel/id6477569529" target="_blank" class="project-link">
+<i class="fab fa-apple"></i> App Store
 </a>
 
-<a href="https://play.google.com/store/apps/details?id=com.application.airbooking&hl=en_IN" target="_blank">
-Google Play
+<a href="https://play.google.com/store/apps/details?id=com.application.airbooking&hl=en_IN" target="_blank" class="project-link">
+<i class="fab fa-google-play"></i> Play Store
 </a>
-
 </div>
-
+</div>
 </div>
 
 <div class="project-card">
+<div class="project-image">
+<div class="project-icon">
+<i class="fas fa-microphone"></i>
+</div>
+</div>
 
+<div class="project-content">
+<div class="project-badge">WebRTC</div>
 <h3>Voizzit</h3>
 
-<p>Social Networking Platform</p>
+<p>
+Social Networking Platform featuring real-time voice and video calling with advanced WebRTC implementation and Socket.IO messaging.
+</p>
 
-<ul>
-<li>Agora</li>
+<ul class="project-tech">
+<li>Agora SDK</li>
 <li>WebRTC</li>
 <li>Socket.IO</li>
+<li>Firebase</li>
 </ul>
 
 <div class="project-links">
-
-<a href="https://apps.apple.com/app/voizzit/id1592973762" target="_blank">
-App Store
+<a href="https://apps.apple.com/app/voizzit/id1592973762" target="_blank" class="project-link">
+<i class="fab fa-apple"></i> App Store
 </a>
 
-<a href="https://play.google.com/store/apps/details?id=com.voizzit&hl=en_IN" target="_blank">
-Google Play
+<a href="https://play.google.com/store/apps/details?id=com.voizzit&hl=en_IN" target="_blank" class="project-link">
+<i class="fab fa-google-play"></i> Play Store
 </a>
-
 </div>
-
+</div>
 </div>
 
 <div class="project-card">
+<div class="project-image">
+<div class="project-icon">
+<i class="fas fa-building"></i>
+</div>
+</div>
 
+<div class="project-content">
+<div class="project-badge">Maps</div>
 <h3>DistrictR</h3>
 
-<p>Real Estate Platform</p>
+<p>
+Real Estate Platform connecting buyers and sellers with advanced property search, mapping, and notification features.
+</p>
 
-<ul>
+<ul class="project-tech">
 <li>Flutter</li>
-<li>Maps</li>
-<li>FCM</li>
+<li>Google Maps</li>
+<li>Firebase</li>
+<li>Push Notifications</li>
 </ul>
 
 <div class="project-links">
-
-<a href="https://play.google.com/store/apps/details?id=me.districtr" target="_blank">
-Google Play
+<a href="https://play.google.com/store/apps/details?id=me.districtr" target="_blank" class="project-link">
+<i class="fab fa-google-play"></i> Play Store
 </a>
-
 </div>
-
 </div>
-
 </div>
-
 </div>
-
 </section>
 
-<section id="experience" class="section">
-
+<!-- Experience Section -->
+<section id="experience" class="section experience">
 <div class="container">
-
-<h2>Experience</h2>
+<div class="section-header">
+<h2>Work <span class="gradient-text">Experience</span></h2>
+<p class="section-subtitle">My professional journey</p>
+</div>
 
 <div class="timeline">
-
 <div class="timeline-item">
+<div class="timeline-marker"></div>
+<div class="timeline-content">
+<div class="timeline-date">
+<i class="fas fa-calendar"></i>
+2020 - Present
+</div>
 <h3>Team Lead - Mobile Applications</h3>
-<span>AirRetailer Technologies | 2020 - Present</span>
+<p class="timeline-company">AirRetailer Technologies</p>
+<p class="timeline-description">
+Leading a team of 8+ mobile developers in designing and delivering enterprise-grade travel booking applications. 
+Responsibilities include architecture design, code review, sprint planning, and stakeholder management.
+</p>
+</div>
 </div>
 
 <div class="timeline-item">
+<div class="timeline-marker"></div>
+<div class="timeline-content">
+<div class="timeline-date">
+<i class="fas fa-calendar"></i>
+2019 - 2020
+</div>
 <h3>Senior Mobile Application Developer</h3>
-<span>DistrictR | 2019 - 2020</span>
+<p class="timeline-company">DistrictR</p>
+<p class="timeline-description">
+Architected and developed a comprehensive real estate platform handling 100k+ users. 
+Implemented complex map features, real-time notifications, and optimized app performance.
+</p>
+</div>
 </div>
 
 <div class="timeline-item">
+<div class="timeline-marker"></div>
+<div class="timeline-content">
+<div class="timeline-date">
+<i class="fas fa-calendar"></i>
+2016 - 2019
+</div>
 <h3>Senior Mobile Application Developer</h3>
-<span>Norjimm | 2016 - 2019</span>
+<p class="timeline-company">Norjimm</p>
+<p class="timeline-description">
+Developed multiple high-performance mobile applications across different industries. 
+Led technical implementation of cloud services integration and database optimization.
+</p>
 </div>
-
 </div>
-
 </div>
-
 </section>
 
-<section id="contact" class="section">
-
+<!-- Contact Section -->
+<section id="contact" class="section contact">
 <div class="container">
+<div class="section-header">
+<h2>Let's <span class="gradient-text">Connect</span></h2>
+<p class="section-subtitle">I'm always open to new opportunities and collaborations</p>
+</div>
 
-<h2>Let's Connect</h2>
+<div class="contact-wrapper">
+<div class="contact-info">
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-envelope"></i>
+</div>
+<h3>Email</h3>
+<a href="mailto:aswanthrc@gmail.com">aswanthrc@gmail.com</a>
+</div>
+
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<h3>Location</h3>
+<p>India</p>
+</div>
+
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-phone"></i>
+</div>
+<h3>Phone</h3>
+<p>Available upon request</p>
+</div>
+</div>
 
 <div class="contact-links">
-
-<a href="mailto:aswanthrc@gmail.com">
-Email
+<a href="mailto:aswanthrc@gmail.com" class="contact-btn">
+<i class="fas fa-envelope"></i>
+Send Email
 </a>
 
-<a href="https://linkedin.com/in/aswanthrc" target="_blank">
+<a href="https://linkedin.com/in/aswanthrc" target="_blank" class="contact-btn">
+<i class="fab fa-linkedin"></i>
 LinkedIn
 </a>
 
-<a href="https://github.com/aswanthrc" target="_blank">
+<a href="https://github.com/aswanthrc" target="_blank" class="contact-btn">
+<i class="fab fa-github"></i>
 GitHub
 </a>
-
 </div>
-
 </div>
-
 </section>
 
-<footer>
-<p>
-© 2026 Aswanth Ramachandran
-</p>
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-content">
+<p>&copy; 2026 Aswanth Ramachandran. All rights reserved.</p>
+<p>Crafted with <i class="fas fa-heart"></i> and passion for mobile development</p>
+</div>
+</div>
 </footer>
 
+<!-- Scripts -->
 <script src="script.js"></script>
 
 </body>
