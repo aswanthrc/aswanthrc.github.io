@@ -788,10 +788,10 @@ header {
 
 /* ============ Contact Section ============ */
 .contact-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 60px;
   position: relative;
   z-index: 2;
 }
@@ -800,6 +800,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .contact-item {
@@ -843,6 +845,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .contact-btn {
@@ -956,7 +960,7 @@ header {
   }
 
   .contact-wrapper {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 40px;
   }
 
@@ -998,61 +1002,4 @@ header {
   .hero-description {
     font-size: 14px;
   }
-
-  .nav-links {
-    right: 10px;
-    gap: 10px;
-  }
-
-  .about-stats {
-    grid-template-columns: 1fr;
-  }
-
-  .stat h3 {
-    font-size: 28px;
-  }
-
-  .hero-image {
-    height: 300px;
-  }
-
-/* =========================================
-   PROFILE IMAGE CUSTOM STYLING (SMALLER)
-   ========================================= */
-
-/* Hero Profile Image Styling */
-.hero-img-frame {
-    width: 180px;  /* Significantly reduced */
-    height: 180px; /* Significantly reduced */
-    margin: 0 auto;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    overflow: hidden;
-    background: linear-gradient(45deg, #02569B, #0175C2);
-    border: 3px solid rgba(255, 255, 255, 0.1); /* Slightly thinner border for small size */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-    transition: all 0.5s ease-in-out;
-    animation: morphProfile 8s ease-in-out infinite alternate;
-}
-
-.hero-img-frame img.profile-avatar {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    mix-blend-mode: normal;
-}
-
-/* Fluid Organic Shape Transition Loop */
-@keyframes morphProfile {
-    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
-    100% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
-}
-
-/* Mobile Responsiveness for Images */
-@media (max-width: 768px) {
-    .hero-img-frame {
-        width: 130px; /* Smaller footprint on mobile */
-        height: 130px;
-    }
-}
-  
 }
